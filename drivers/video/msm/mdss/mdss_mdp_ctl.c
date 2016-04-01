@@ -3793,6 +3793,7 @@ int mdss_mdp_ctl_update_fps(struct mdss_mdp_ctl *ctl)
 	ATRACE_END("config_fps");
 
 exit:
+
 	return ret;
 }
 
