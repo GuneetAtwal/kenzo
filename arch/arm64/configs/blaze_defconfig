@@ -669,7 +669,6 @@ CONFIG_IOSCHED_SIO=y
 # Extra
 #
 CONFIG_CPU_BOOST=y
-
 #
 # Wlan drivers
 #
