@@ -124,6 +124,10 @@ config CPU_FREQ_DEFAULT_GOV_BLAZEACTIVE
 	help
 	  Use the CPUFreq governor 'blazeactive' as default.
 
+ config CPU_FREQ_DEFAULT_GOV_DARKNESS
+	bool "darkness"
+	select CPU_FREQ_GOV_DARKNESS
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -207,6 +211,9 @@ config CPU_FREQ_GOV_BLAZEACTIVE
 	  module will be called cpufreq_blazeactive.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_DARKNESS
+	tristate "'darkness' cpufreq policy governor"
 
 config CPU_FREQ_GOV_CONSERVATIVE
 	tristate "'conservative' cpufreq governor"
