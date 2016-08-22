@@ -23,7 +23,7 @@ NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
 BASE="-Blaze™Kernel-"
-CUR_VER="1"
+CUR_VER="2"
 BLAZE_VER="$BASE$CUR_VER"
  
 
