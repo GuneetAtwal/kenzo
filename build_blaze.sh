@@ -27,8 +27,8 @@ MODULE_DIR=$OUT_DIR/system/lib/modules
 NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
-BASE="-Blaze™Kernel-"
-CUR_VER="3"
+BASE="-Blaze™Kernel"
+CUR_VER="-4-CM"
 BLAZE_VER="$BASE$CUR_VER"
  
 
