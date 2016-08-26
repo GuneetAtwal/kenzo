@@ -22,8 +22,8 @@ MODULE_DIR=$OUT_DIR/system/lib/modules
 NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
-BASE="-Blaze™Kernel-"
-CUR_VER="1"
+BASE="-Blaze™Kernel"
+CUR_VER="-2-MIUI"
 BLAZE_VER="$BASE$CUR_VER"
  
 
