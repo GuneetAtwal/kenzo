@@ -660,6 +660,11 @@ CONFIG_IOSCHED_SIO=y
 #
 CONFIG_ADRENO_IDLER=y
 #
+# Extra
+#
+CONFIG_CPU_BOOST=y
+
+#
 # Wlan drivers
 #
 # CONFIG_PRIMA_WLAN is not set
