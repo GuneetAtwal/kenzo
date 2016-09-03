@@ -12,12 +12,12 @@ blue='\033[0;34m'
 default='\033[0m'
 
 # Resources
-ANDROID_DIR=/home/guneetatwal/android
+ANDROID_DIR=~/android
 KERNEL_DIR=$PWD
 IMAGE=$KERNEL_DIR/arch/arm64/boot/Image
 #IMAGE=$KERNEL_DIR/arch/arm/boot/zImage for 32 bit architecture
 DTBTOOL=$KERNEL_DIR/scripts/dtbTool
-TOOLCHAIN=$ANDROID_DIR/toolchain/aarch64-linux-android-4.9/bin
+TOOLCHAIN=$ANDROID_DIR/toolchains/aarch64-linux-android-4.9/bin
 STRIP=$TOOLCHAIN/aarch64-linux-android-strip
 
 #Paths
@@ -28,7 +28,7 @@ NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
 BASE="-Blaze™Kernel"
-CUR_VER="-4-MIUI"
+CUR_VER="-5-MIUI-BETA-2"
 BLAZE_VER="$BASE$CUR_VER"
  
 
@@ -48,7 +48,7 @@ function make_blaze {
 		echo
 		make $DEFCONFIG
 		make menuconfig
-		make -j5
+		make -j8
 		rm -rf $NEWOUT/Image
 		cp -vr $IMAGE $NEW_OUT
 		make_dtb
@@ -72,7 +72,7 @@ function make_recompile {
 			echo -e "$cyan*******************************************************"
 			echo "             Recompiling $BLAZE_VER	              "
 			echo -e "*****************************************************"
-			make -j5
+			make -j8
 			rm -rf $NEWOUT/Image
 			cp -vr $IMAGE $NEW_OUT
 			make_dtb
