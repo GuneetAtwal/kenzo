@@ -28,7 +28,7 @@ NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
 BASE="-Blaze™Kernel"
-CUR_VER="-5-MIUI-BETA-2"
+CUR_VER="-5-MIUI-STABLE"
 BLAZE_VER="$BASE$CUR_VER"
  
 
