@@ -28,11 +28,11 @@
 #define CPUS_DOWN_RATE				1
 #define CPUS_UP_RATE				1
 #define DEC_CPU_LOAD				70
-#define DEC_CPU_LOAD_AT_MIN_FREQ	60
+#define DEC_CPU_LOAD_AT_MIN_FREQ		60
 #define INC_CPU_LOAD				70
-#define INC_CPU_LOAD_AT_MIN_FREQ	60
+#define INC_CPU_LOAD_AT_MIN_FREQ		60
 
-#define DEF_SAMPLING_RATE			(10000)
+#define DEF_SAMPLING_RATE			(30000)
 #define MIN_SAMPLING_RATE			(10000)
 
 /* Pump Inc/Dec for all cores */
