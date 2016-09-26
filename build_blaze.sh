@@ -27,8 +27,8 @@ MODULE_DIR=$OUT_DIR/system/lib/modules
 NEW_OUT=$OUT_DIR/tools
 
 # Kernel Version Info
-BASE="-Blaze™Kernel"
-CUR_VER="-5-CM"
+BASE="-Blaze™"
+CUR_VER="-6"
 BLAZE_VER="$BASE$CUR_VER"
  
 
@@ -39,7 +39,7 @@ export LOCALVERSION=~`echo $BLAZE_VER`
 export CROSS_COMPILE=$TOOLCHAIN/aarch64-linux-android-
 export ARCH=arm64
 export KBUILD_BUILD_USER="GuneetAtwal"
-export KBUILD_BUILD_HOST="BeastPC"
+export KBUILD_BUILD_HOST="MIUI"
 
 function make_blaze {
 		echo -e "$green*******************************************************"
@@ -109,8 +109,8 @@ function make_zip {
 		echo -e "*****************************************************"
 		cd $OUT_DIR
 		rm -f '*.zip'
-		zip -yr BlazeKernel`echo $CUR_VER`.zip *
-		mv BlazeKernel`echo $CUR_VER`.zip $OUT_ZIP
+		zip -yr BlazeKernel-mi-mm`echo $CUR_VER`.zip *
+		mv BlazeKernel-mi-mm`echo $CUR_VER`.zip $OUT_ZIP
 		echo "       Find your zip in Blaze-Releases directory"
 		echo -e "$default"
 		cd $KERNEL_DIR 
